@@ -90,6 +90,7 @@ const Home = () => {
                 settings:{
                     slidesToShow:1,
                     slidesToScroll:1,
+                    dots:true
                 }
             }
         ]
@@ -168,7 +169,7 @@ const Home = () => {
                 </div>
             {/* ===== join ends======= */}
         </section>
-        <section>
+        <section className='testimonial'>
             {/* ==== testimonials start ==== */}
             <h2>What are Students Saying</h2>
                 <Slider {...settings} style={{display:'flex'}}>

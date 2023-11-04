@@ -133,6 +133,9 @@ const HomeStyle = styled.div`
         flex-direction:row-reverse;
         text-align:right;
     }
+    .testimonial h2{
+        font-size:1.5rem;
+    }
     .join{
         background-image:url(${Join}),url(${Why2});
         background-size:cover;
@@ -311,7 +314,11 @@ const HomeStyle = styled.div`
             }
         }
         .slick-slider{
-            /* overflow-x:hidden; */
+            display:block;
+            overflow-y:hidden;
+        }
+        .slick-initialized{
+            display:block;
         }
     }
 `
