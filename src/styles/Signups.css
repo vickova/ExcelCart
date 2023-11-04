@@ -1,0 +1,102 @@
+.signups{
+    background-image: url('../assets/icons/bg-mobile-left.svg'), url('../assets/icons/bg-mobile-right.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+/* form{
+    margin: 1rem;
+} */
+input[type="file"]{
+    color: transparent;
+}
+input[type="file"]::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+input[type="file"]::before{
+    content: 'Driver’s license, School ID card';
+  color: black;
+  display: inline-block;
+  border-radius: 3px;
+  /* padding: 5px 8px; */
+  outline: none;
+  white-space: nowrap;
+  cursor: pointer;
+    position: relative;
+    top: 10px;
+}
+.agreement{
+    display: flex;
+    align-items: center;
+    gap:.5rem;
+    margin-bottom: 1rem;
+}
+.account{
+    text-align: center;
+}
+.account a{
+    text-decoration: none;
+}
+.agreement p, .account{
+    font-size: .7rem;
+}
+.agreement p span, .account span{
+    color: #00AB9B;
+}
+.agreement input{
+    outline: none;
+}
+.forgot{
+    text-align: right;
+    font-size: .7rem;
+    cursor: pointer;
+    color: #8B8B8B;
+}
+label{
+    color: #344054;
+}
+input::placeholder{
+    color: #667085;
+}
+.input{
+    margin: .5rem 0;
+}
+input[type="checkbox"]:checked {
+    accent-color: #00AB9B; 
+    color: #fff;
+}
+.welcome{
+    margin: 3rem 0;
+}
+.welcome h2{
+    margin: .5rem 0;
+}
+.welcome p{
+    font-size: small;
+    margin: 0;
+    color: #8B8B8B;
+}
+.title{
+    margin: 3rem 0;
+}
+
+@media screen and (min-width:450px){
+    .signups{
+        background-image: url('../assets/icons/light-bg1.svg'), url('../assets/icons/light-bg2.svg');
+        background-position: center;
+    }
+    .signups .inner{
+        width: 40%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        box-shadow: 1px 1px 5px 1px #abaaaa;
+        border-radius: 5px;
+        padding: 1rem;
+    }
+    li{
+        font-weight: bold;
+    }
+}
